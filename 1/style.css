@@ -1,0 +1,61 @@
+@font-face{
+	font-family:ghg;
+	src: url("18874.ttf");
+}
+body{
+	margin: 0;
+}
+#top-menu{
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	background-color: rgba(0,0,0,0.1);
+	width: 100%;
+}
+#top-menu a{
+	text-decoration: none;
+}
+.top-menu-btn{
+	color: #00f;
+	display: inline-block;
+	height: 20px;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size:18px;
+	font-family:ghg;  
+}
+.box{
+	position: absolute;
+	width: 100%;
+}
+.box-img{
+	width: 100%;
+}
+#right-menu{
+	position: fixed;
+	top: 40px;
+	z-index: 1000;
+	right: 0;
+	bottom: 40px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.right-menu-btn{
+	height: 0; 
+	width: 0;
+	border: solid 20px transparent;
+	border-bottom-color: #aaa; 
+	position: relative;
+	top: -20px;
+}
+
+.right-menu-btn:after{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -20px;
+	top: 20px;
+	border: 20px solid transparent;
+	border-bottom-color: #aaa;
+}
